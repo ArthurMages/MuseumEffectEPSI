@@ -37,7 +37,7 @@
                 <div class="gallery-item">
                     <img src="images/russie/muse-ermitage.jpg" 
                     alt="Image 1" 
-                    onclick="window.location.href='index.php?page=galerie#musée-de-l-ermitage'" 
+                    onclick="window.location.href='index.php?page=galerie#musée-de-l\'ermitage'" 
                     style="cursor: pointer;">
                 </div>
                 <div class="gallery-item">
