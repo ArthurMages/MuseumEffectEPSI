@@ -1,0 +1,80 @@
+.titrecontact {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.descriptioncontact {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    color: #eaeaea;
+}
+
+
+form {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #ff007f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e6006c;
+}
+
+
+small {
+    font-size: 0.9rem;
+    color: #ccc;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+}
+
+.column input {
+    width: 100%;
+}
+
+.column label {
+    margin-bottom: 5px;
+}
