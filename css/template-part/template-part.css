@@ -1,0 +1,244 @@
+/* Navbar */
+.navbar {
+    background-color: #000000;
+    position: relative;
+    z-index: 10; /* Niveau supérieur pour rester devant les autres éléments */
+}
+
+.container-navbar {
+    background-color: #000000;
+    height: 48px;
+    max-width: 1100px; 
+    margin: 0 auto;
+    padding: 15px;
+    z-index: 10;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu li {
+    position: relative;
+    list-style-type: none;
+    z-index: 10;
+}
+
+.menu a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#one-of-type {
+    color: #0055A4;
+}
+
+#two-of-type {
+    color:  #FFFFFF;
+}
+
+#three-of-type {
+    color: #EF4135;
+}
+
+/* Sous-menus avec position fixe et z-index élevé */
+.submenu-brand, 
+.submenu-assistance,
+.submenu-language {
+    background-color: #fff;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 100vw;
+    gap: 40px;
+    padding: 10px 0;
+    top: 33px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s;
+    z-index: 15; /* Toujours au-dessus des autres éléments */
+}
+
+.menu li:hover .submenu-brand,
+.menu li:hover .submenu-assistance,
+.menu li:hover .submenu-language {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Burger Menu */
+.burger-toggle {
+    display: none;
+}
+
+.burger-title {
+    display: none;
+    justify-content: center;
+    text-decoration: none;
+    padding: 2px;
+    color: #002481;
+    font-size: 14px;
+}
+
+.burger-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: #002481;
+    z-index: 20; /* S'assure que l'icône burger est visible */
+}
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    top: 48px;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    list-style-type: none;
+    z-index: 15; /* Toujours au-dessus des autres éléments */
+}
+
+.burger-menu a {
+    text-decoration: none;
+    color: #002481;
+    font-size: 14px;
+}
+
+.burger-toggle:checked ~ .burger-menu {
+    display: flex;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #000000;
+    padding: 30px 0;
+}
+
+#one-tab {
+    color: #0055A4;
+}
+
+#two-tab {
+    color: #FFFFFF;
+}
+
+#three-tab {
+    color: #EF4135;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center; 
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 15px;
+    gap: 20px; 
+}
+
+.footer-legal,
+.footer-links, 
+.footer-social {
+    width: 30%;
+    text-align: center; 
+}
+
+.footer-legal h2,
+.footer-links h2, 
+.footer-social h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-legal ul,
+.footer-links ul, 
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-legal ul li,
+.footer-links ul li, 
+.footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-legal ul li a,
+.footer-links ul li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center; 
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.barre {
+    width: 100%;      
+    border: 0.1px solid #fff; 
+}
+.footer-bottom {
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .burger-icon {
+        display: block;
+    }
+
+    .burger-title {
+        display: flex;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links, 
+    .footer-social {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
