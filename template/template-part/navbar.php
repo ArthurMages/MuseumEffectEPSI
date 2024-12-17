@@ -8,7 +8,7 @@
         </ul>
    
         <!-- Phone -->
-         <a href="index.php?page=home" class="burger-title">Covering3d</a>
+         <a href="index.php?page=home" class="burger-title">Museum Effect</a>
         <input type="checkbox" id="burger-toggle" class="burger-toggle">
         <label for="burger-toggle" class="burger-icon">☰</label>
 

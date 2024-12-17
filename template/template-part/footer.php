@@ -14,7 +14,7 @@
             <ul>
                 <li><a href="#">À propos</a></li>
                 <li><a href="#service">Nos services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.php?page=contact">Contact</a></li>
             </ul>
         </div>
 
