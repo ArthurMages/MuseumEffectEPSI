@@ -36,6 +36,6 @@ $page = isset($_GET['page']) && in_array($_GET['page'], $allowed_pages) ? $_GET[
     
     <?php include 'template/template-part/footer.php' ;?>
 
-    <script src="js/template-part/template-part.js" defer></script>
+    <script src="js/template-part.js" defer></script>
 </body>
 </html>

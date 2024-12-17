@@ -4,7 +4,7 @@
         <div class="hero-content">
             <h2>Le Louvre</h2>
             <p>Laissez vous tenter par la culture et l'art de la France..</p>
-            <a href="#" class="btn-primary">Découvrez</a>
+            <a href="index.php?page=galerie#musée-du-louvre" class="btn-primary">Découvrez</a>
         </div>
     </section>
 
@@ -35,17 +35,28 @@
             <h2>Museum</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="images/russie/muse-ermitage.jpg" alt="Image 1">
+                    <img src="images/russie/muse-ermitage.jpg" 
+                    alt="Image 1" 
+                    onclick="window.location.href='index.php?page=galerie#musée-de-l-ermitage'" 
+                    style="cursor: pointer;">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/angleterre/british-museum.jpg" alt="Image 3">
+                    <img src="images/angleterre/british-museum.jpg" 
+                    alt="Image 3" 
+                    onclick="window.location.href='index.php?page=galerie#british-museum'" 
+                    style="cursor: pointer;">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/etats-unies/the-met.jpg" alt="Image 2">
+                    <img src="images/etats-unies/the-met.jpg" 
+                    alt="Image 2" 
+                    onclick="window.location.href='index.php?page=galerie#the-metropolitan-museum-of-art'" 
+                    style="cursor: pointer;">
                 </div>
-                
                 <div class="gallery-item">
-                    <img src="images/australie/national-gallery-of-australia.jpg" alt="Image 4">
+                    <img src="images/australie/national-gallery-of-australia.jpg" 
+                    alt="Image 4" 
+                    onclick="window.location.href='index.php?page=galerie#national-gallery-of-australia'" 
+                    style="cursor: pointer;">
                 </div>
             </div>
         </div>
