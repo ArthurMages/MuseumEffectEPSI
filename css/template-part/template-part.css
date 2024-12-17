@@ -2,7 +2,7 @@
 .navbar {
     background-color: #000000;
     position: relative;
-    z-index: 10; 
+    z-index: 10; /* Niveau supérieur pour rester devant les autres éléments */
 }
 
 .container-navbar {
@@ -46,6 +46,7 @@
     color: #EF4135;
 }
 
+/* Sous-menus avec position fixe et z-index élevé */
 .submenu-brand, 
 .submenu-assistance,
 .submenu-language {
@@ -62,7 +63,7 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s;
-    z-index: 15; 
+    z-index: 15; /* Toujours au-dessus des autres éléments */
 }
 
 .menu li:hover .submenu-brand,
@@ -82,7 +83,7 @@
     justify-content: center;
     text-decoration: none;
     padding: 2px;
-    color: #0055A4;
+    color: #002481;
     font-size: 14px;
 }
 
@@ -93,13 +94,14 @@
     position: absolute;
     top: 5px;
     right: 15px;
-    color: #0055A4;
-    z-index: 20; 
+    color: #002481;
+    z-index: 20; /* S'assure que l'icône burger est visible */
+}
 
 .burger-menu {
     display: none;
     position: fixed;
-    background-color: #000;
+    background-color: #fff;
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -108,12 +110,12 @@
     right: 0;
     padding: 25px;
     list-style-type: none;
-    z-index: 15; 
+    z-index: 15; /* Toujours au-dessus des autres éléments */
 }
 
 .burger-menu a {
     text-decoration: none;
-    color: #fff;
+    color: #002481;
     font-size: 14px;
 }
 
