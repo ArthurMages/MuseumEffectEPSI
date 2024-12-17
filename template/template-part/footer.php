@@ -14,7 +14,6 @@
             <ul>
                 <li><a href="#">À propos</a></li>
                 <li><a href="#service">Nos services</a></li>
-                <li><a href="#">Aide</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
@@ -24,7 +23,6 @@
             <ul class="social-icons">
                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
             </ul>
         </div>
     </div>
