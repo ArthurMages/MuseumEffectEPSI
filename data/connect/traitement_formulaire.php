@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ':message' => $message,
         ]);
 
-        header("Location: accueil.php");
+        header("Location: /template/page/home.php");
         exit;
 
     } catch (PDOException $e) {

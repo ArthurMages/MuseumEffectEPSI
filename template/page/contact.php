@@ -4,7 +4,7 @@
 </div>
 
 
-<form action="traitement_formulaire.php" method="POST">
+<form action="/data/connect/traitement_formulaire.php" method="POST">
     <label for="raison">Pourquoi nous contactez-vous ?</label><br>
     <select name="raison" id="raison" required>
         <option value=""> </option>

@@ -1,10 +1,8 @@
 <?php
 session_start();
 
-// Définir une liste de pages autorisées
-$allowed_pages = ['home', 'contact', 'galerie'];
+$allowed_pages = ['home', 'contact', 'galerie', 'db_connect', 'traitement_formulaire'];
 
-// Vérifier que la page demandée est autorisée, sinon utiliser 'home' par défaut
 $page = isset($_GET['page']) && in_array($_GET['page'], $allowed_pages) ? $_GET['page'] : 'home';
 
 ?>
